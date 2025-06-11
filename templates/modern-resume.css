@@ -1,0 +1,167 @@
+/* Modern Resume Template */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 40px 20px;
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+    margin: 30px 40px 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+h3 {
+    color: #444;
+    margin: 20px 40px 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h4, h5, h6 {
+    color: #666;
+    margin: 15px 40px 8px;
+    font-weight: 500;
+}
+
+p, li {
+    margin: 10px 40px;
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+ul, ol {
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+strong {
+    color: #444;
+    font-weight: 600;
+}
+
+em {
+    color: #666;
+    font-style: italic;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+a:hover {
+    border-bottom: 1px solid #667eea;
+}
+
+code {
+    background-color: #f1f3f4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+blockquote {
+    border-left: 4px solid #667eea;
+    margin: 20px 40px;
+    padding-left: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+table {
+    width: calc(100% - 80px);
+    margin: 20px 40px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #667eea;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ddd, transparent);
+    margin: 30px 40px;
+}
+
+/* Contact information styling */
+h1 + p {
+    text-align: center;
+    color: rgba(255,255,255,0.95);
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0 40px 20px;
+    font-size: 1.1em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .resume-container {
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    h1 {
+        background: #667eea;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+}
